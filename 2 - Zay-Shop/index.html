@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FONT FAMILY -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+
+    <title>Assigment - 2 | Zay Shop</title>
+  </head>
+  <body>
+    <div class="info">
+      <div class="container flex">
+        <div class="flex u-gap-large">
+          <div class="info__contact flex flex--v-center u-gap-small">
+            <ion-icon
+              class="icon icon--size-small"
+              name="mail"
+              role="img"
+              aria-label="Mail"
+            ></ion-icon>
+            <a href="mailto:info@company.com" class="info__link"
+              >info@company.com</a
+            >
+          </div>
+          <div class="info__contact flex flex--v-center u-gap-small">
+            <ion-icon
+              name="call"
+              class="icon icon--size-small"
+              role="img"
+              aria-label="Phone"
+            ></ion-icon>
+            <a href="tel:010-020-0340" class="info__link">010-020-0340</a>
+          </div>
+        </div>
+
+        <div class="flex u-gap-medium">
+          <a href="" class="social__link">
+            <ion-icon
+              class="icon icon--size-small"
+              name="logo-facebook"
+              role="img"
+              aria-label="facebook"
+            ></ion-icon>
+          </a>
+          <a href="" class="social__link">
+            <ion-icon
+              class="icon icon--size-small"
+              name="logo-instagram"
+              role="img"
+              aria-label="Instagram"
+            ></ion-icon>
+          </a>
+          <a href="" class="social__link">
+            <ion-icon
+              class="icon icon--size-small"
+              name="logo-twitter"
+              role="img"
+              aria-label="Twitter"
+            ></ion-icon>
+          </a>
+          <a href="" class="social__link">
+            <ion-icon
+              class="icon icon--size-small"
+              name="logo-linkedin"
+              role="img"
+              aria-label="LinkedIn"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container flex flex--v-center">
+        <a href="#" class="logo-brand">Zay</a>
+
+        <nav
+          class="main-nav flex flex--fill flex--v-center flex--align-stretch"
+        >
+          <ul class="main-nav__list flex">
+            <li><a href="" class="main-nav__link">Home</a></li>
+            <li><a href="" class="main-nav__link">About</a></li>
+            <li><a href="" class="main-nav__link">Shop</a></li>
+            <li><a href="" class="main-nav__link">Contact</a></li>
+          </ul>
+
+          <div
+            class="main-nav__user flex flex--v-center flex--align-stretch u-gap-small"
+          >
+            <div
+              class="main-nav__user__icon-box flex flex--v-center flex--align-stretch"
+            >
+              <ion-icon
+                name="search-sharp"
+                class="main-nav__user__icon"
+              ></ion-icon>
+            </div>
+            <div
+              class="main-nav__user__icon-box flex flex--v-center flex--align-stretch"
+            >
+              <ion-icon
+                name="cart-sharp"
+                class="main-nav__user__icon"
+              ></ion-icon>
+              <span class="main-nav__user__notification flex flex--v-center"
+                >7</span
+              >
+            </div>
+            <div
+              class="main-nav__user__icon-box flex flex--v-center flex--align-stretch"
+            >
+              <ion-icon
+                name="person-sharp"
+                class="main-nav__user__icon"
+              ></ion-icon>
+              <span class="main-nav__user__notification flex flex--v-center"
+                >+99</span
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="slide flex flex--v-center u-gap-medium">
+            <div class="hero__text-box">
+              <h1 class="heading-primary">Zay <span>eCommerce</span></h1>
+              <p class="hero__sub-title">Tiny and Perfect eCommerce Template</p>
+              <p class="hero__description">
+                Zay Shop is an eCommerce HTML5 CSS template with latest version
+                of Bootstrap 5 (beta 1). This template is 100% free provided by
+                <a href="https://templatemo.com/" class="hero__link"
+                  >TemplateMo</a
+                >
+                website. Image credits go to
+                <a href="https://stories.freepik.com/" class="hero__link"
+                  >Freepik Stories</a
+                >,
+                <a href="https://unsplash.com/" class="hero__link">Unsplash</a>
+                and
+                <a href="https://icons8.com/" class="hero__link">Icons 8</a>.
+              </p>
+            </div>
+            <div class="hero__img-box">
+              <img
+                src="./imgs/banner_img_01.jpg"
+                alt="Shoes"
+                class="hero__photo"
+              />
+            </div>
+          </div>
+          <!-- <div class="slide flex flex--v-center u-gap-medium">
+            <div class="hero__text-box">
+              <h2 class="heading-primary heading-primary--white">
+                Proident occaecat
+              </h2>
+              <p class="hero__sub-title">Aliquip ex ea commodo consequat</p>
+              <p class="hero__description">
+                You are permitted to use this Zay CSS template for your
+                commercial websites. You are <strong>not permitted</strong> to
+                re-distribute the template ZIP file in any kind of template
+                collection websites.
+              </p>
+            </div>
+            <div class="hero__img-box">
+              <img
+                src="./imgs/banner_img_02.jpg"
+                alt="Shoes"
+                class="hero__photo"
+              />
+            </div>
+          </div> -->
+          <!-- <div class="slide flex flex--v-center u-gap-medium">
+            <div class="hero__text-box">
+              <h2 class="heading-primary heading-primary--white">
+                Repr in voluptate
+              </h2>
+              <p class="hero__sub-title">Ullamco laboris nisi ut</p>
+              <p class="hero__description">
+                We bring you 100% free CSS templates for your websites. If you
+                wish to support TemplateMo, please make a small contribution via
+                PayPal or tell your friends about our website. Thank you.
+              </p>
+            </div>
+            <div class="hero__img-box">
+              <img
+                src="./imgs/banner_img_03.jpg"
+                alt="Shoes"
+                class="hero__photo"
+              />
+            </div>
+          </div> -->
+        </div>
+        <div class="pagination">
+          <ion-icon
+            class="pagination__arrow pagination__arrow--left"
+            name="chevron-back"
+          ></ion-icon>
+          <ion-icon
+            class="pagination__arrow pagination__arrow--right"
+            name="chevron-forward"
+          ></ion-icon>
+          <div class="pagination__dots flex u-gap-medium">
+            <button
+              class="pagination__dot pagination__dot--active"
+              date-slide="0"
+            ></button>
+            <button class="pagination__dot" date-slide="1"></button>
+            <button class="pagination__dot" date-slide="2"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <div class="container">
+          <h2 class="heading-secondary">Categories of The Month</h2>
+          <p class="sub-heading">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="categories flex u-gap-large">
+            <div class="category">
+              <img
+                src="./imgs/category-01.jpg"
+                alt="Wristwtch"
+                class="category__photo"
+              />
+              <p class="category__name">Watches</p>
+              <button class="btn">Go Shop</button>
+            </div>
+            <div class="category">
+              <img
+                src="./imgs/category-02.jpg"
+                alt="Shoes"
+                class="category__photo"
+              />
+              <p class="category__name">Shoes</p>
+              <button class="btn">Go Shop</button>
+            </div>
+            <div class="category">
+              <img
+                src="./imgs/category-03.jpg"
+                alt="Accessories"
+                class="category__photo"
+              />
+              <p class="category__name">Accessories</p>
+              <button class="btn">Go Shop</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="container">
+          <h2 class="heading-secondary">Featured Product</h2>
+          <p class="sub-heading">
+            Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+
+          <div class="products flex u-gap-large">
+            <div class="card">
+              <img
+                src="./imgs/feature_prod_01.jpg"
+                alt=""
+                class="card__photo"
+              />
+              <div class="card__details">
+                <div class="flex flex--v-center">
+                  <p class="flex u-gap-small">
+                    <ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star card__star--inactive"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star card__star--inactive"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon>
+                  </p>
+                  <p class="card__price text-gray">$240.00</p>
+                </div>
+                <h3 class="card__heading">Gym Weight</h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Similique neque perferendis tempora sed ea beatae cum,
+                  veritatis voluptatibus et repudiandae molestias mollitia
+                  aliquid deleniti commodi itaque repellat provident ullam
+                  autem?
+                </p>
+                <p class="text-gray">Reviews (24)</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="./imgs/feature_prod_02.jpg"
+                alt=""
+                class="card__photo"
+              />
+              <div class="card__details">
+                <div class="flex flex--v-center">
+                  <p class="flex u-gap-small">
+                    <ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star card__star--inactive"
+                      name="star"
+                      role="img"
+                      aria-label="Star inactive"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star card__star--inactive"
+                      name="star"
+                      role="img"
+                      aria-label="Star inactive"
+                    ></ion-icon>
+                  </p>
+                  <p class="card__price text-gray">$480.00</p>
+                </div>
+                <h3 class="card__heading">Cloud Nike Shoes</h3>
+                <p class="card__text">
+                  Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
+                  vitae pharetra sed, commodo ullamcorper.
+                </p>
+                <p class="text-gray">Reviews (48)</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="./imgs/feature_prod_03.jpg"
+                alt=""
+                class="card__photo"
+              />
+              <div class="card__details">
+                <div class="flex flex--v-center">
+                  <p class="flex u-gap-small">
+                    <ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon
+                    ><ion-icon
+                      class="card__star"
+                      name="star"
+                      role="img"
+                      aria-label="Star"
+                    ></ion-icon>
+                  </p>
+                  <p class="card__price text-gray">$360.00</p>
+                </div>
+                <h3 class="card__heading">Summer Addides Shoes</h3>
+                <p class="card__text">
+                  Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar
+                  sagittis diam, et scelerisque ipsum lobortis nec.
+                </p>
+                <p class="text-gray">Reviews (74)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="flex flex-footer u-border-bottom u-gap-large">
+          <div class="footer-col logo-col">
+            <a href="#" class="logo-brand u-border-bottom footer__heading"
+              >Zay Shop</a
+            >
+            <ul class="flex flex--column footer__nav">
+              <li class="flex u-gap-small">
+                <ion-icon
+                  class="icon icon--size-medium"
+                  name="map"
+                  role="img"
+                  aria-label="Map"
+                ></ion-icon>
+                <span> 123 Consectetur at ligula 10660</span>
+              </li>
+              <li class="flex u-gap-small">
+                <ion-icon
+                  name="call"
+                  class="icon icon--size-medium"
+                  role="img"
+                  aria-label="Phone"
+                ></ion-icon
+                ><a href="tel:0100200340" class="footer__link">010-020-0340</a>
+              </li>
+              <li class="flex u-gap-small">
+                <ion-icon
+                  class="icon icon--size-medium"
+                  name="mail"
+                  role="img"
+                  aria-label="Mail"
+                ></ion-icon>
+                <a href="mailto:info@company.com" class="footer__link"
+                  >info@company.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col product-col">
+            <p class="footer__heading u-border-bottom">Products</p>
+            <ul class="flex flex--column">
+              <li><a href="#" class="footer__link">Luxury</a></li>
+              <li><a href="#" class="footer__link">Sport Wear</a></li>
+              <li><a href="#" class="footer__link">Men's Shoes</a></li>
+              <li><a href="#" class="footer__link">Women's Shoes</a></li>
+              <li><a href="#" class="footer__link">Popular Dress</a></li>
+              <li><a href="#" class="footer__link">Gym Accessories</a></li>
+              <li><a href="#" class="footer__link">Sport Shoes</a></li>
+            </ul>
+          </div>
+          <div class="footer-col info-col">
+            <p class="footer__heading u-border-bottom">Further Info</p>
+            <ul class="flex flex--column">
+              <li><a href="#" class="footer__link">Home</a></li>
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Shop Locations</a></li>
+              <li><a href="#" class="footer__link">FAQs</a></li>
+              <li><a href="#" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex footer__contact flex--v-center">
+          <ul class="flex u-gap-medium">
+            <li>
+              <a href="" class="social__link">
+                <ion-icon
+                  class="icon icon--size-large"
+                  name="logo-facebook"
+                  role="img"
+                  aria-label="Facebook"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social__link">
+                <ion-icon
+                  class="icon icon--size-large"
+                  name="logo-instagram"
+                  role="img"
+                  aria-label="Instagram"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social__link">
+                <ion-icon
+                  class="icon icon--size-large"
+                  name="logo-twitter"
+                  role="img"
+                  aria-label="Twitter"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social__link">
+                <ion-icon
+                  class="icon icon--size-large"
+                  name="logo-linkedin"
+                  role="img"
+                  aria-label="LinkedIn"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <form class="footer__form">
+            <input
+              type="text"
+              placeholder="Email address"
+              class="footer__input"
+            />
+            <button class="btn btn--small">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>
+            Copyright © 2021 Company Name | Designed inspired by
+            <a href="#" class="footer__link footer__link--line">TemplateMo</a>
+            , built by
+            <a
+              class="footer__link footer__link--line"
+              href="https://github.com/MahmoudMostafa11199"
+              >Mahmoud Mustafa</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
