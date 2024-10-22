@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assests/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assests/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assests/style.css" />
+
+    <script defer src="./assests/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <style>
+      .about input {
+        max-width: 3rem !important;
+      }
+    </style>
+
+    <title>Assigment - 4 | Shop Item</title>
+  </head>
+
+  <body>
+    <header class="header bg-body-tertiary shadow-sm position-fixed w-100 z-3">
+      <div class="container px-4 px-lg-5">
+        <nav class="navbar navbar-expand-lg toggl">
+          <a class="navbar-brand fs-5" href="#">Start Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav ms-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#product">All Products</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#product">Popular Items</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#product">New Arrivals</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <button class="btn btn-outline-dark" type="submit">
+                <i class="bi bi-cart-fill"></i>
+                Cart
+                <span class="badge bg-dark text-white ms-1 rounded-pill"
+                  >0</span
+                >
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="about py-5">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 align-items-center py-5">
+            <div class="col-md-6">
+              <img
+                src="./assests/imgs/600_700.jpg"
+                class="card-img mb-5 mb-md-0"
+                alt=""
+              />
+            </div>
+
+            <div class="col-md-6">
+              <span class="small">SKU: BST-498 </span>
+              <h1 class="fw-bolder display-5">Shop item template</h1>
+              <div class="fs-5 mb-4">
+                <span class="text-decoration-line-through me-2">$45.00</span
+                ><span>$40.00</span>
+              </div>
+              <p class="fs-5 fw-light mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium at dolorem quidem modi. Nam sequi consequatur
+                obcaecati excepturi alias magni, accusamus eius blanditiis
+                delectus ipsam minima ea iste laborum vero?
+              </p>
+
+              <form class="d-flex">
+                <input
+                  class="form-control text-center me-4"
+                  type="text"
+                  value="1"
+                  aria-label="default input example"
+                />
+                <button class="btn btn-outline-dark" type="submit">
+                  <i class="bi bi-cart-fill"></i>
+                  Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="bg-light py-5 pb-1">
+        <div class="container py-5 px-4 p-lg-5">
+          <h2 class="fw-bolder mb-4">Related Products</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+            <div class="col px-3 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./assests/imgs/450_300.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body p-4 text-center">
+                  <h4 class="card-title fw-bold">Fancy Product</h4>
+                  <div><span>$40.00 - </span><span>$80.00</span></div>
+                </div>
+                <div class="card-footer border-top-0 text-center bg-white">
+                  <a class="btn btn-outline-dark mb-3" href="#">View options</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col px-3 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./assests/imgs/450_300.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body p-4 text-center">
+                  <h4 class="card-title fw-bold">Special Item</h4>
+                  <div class="small mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div>
+                    <span class="text-decoration-line-through me-3">$20.00</span
+                    ><span>$18.00</span>
+                  </div>
+                </div>
+                <div class="card-footer border-top-0 text-center bg-white">
+                  <a class="btn btn-outline-dark mb-3" href="#">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col px-3 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./assests/imgs/450_300.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body p-4 text-center">
+                  <h4 class="card-title fw-bold">Sale Item</h4>
+                  <div>
+                    <span class="text-decoration-line-through me-3">$50.00</span
+                    ><span>$25.00</span>
+                  </div>
+                </div>
+                <div class="card-footer border-top-0 text-center bg-white">
+                  <a class="btn btn-outline-dark mb-3" href="#">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col px-3 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./assests/imgs/450_300.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body p-4 text-center">
+                  <h4 class="card-title fw-bold">Popular Item</h4>
+                  <div class="small mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div><span>$40.00</span></div>
+                </div>
+                <div class="card-footer border-top-0 text-center bg-white">
+                  <a class="btn btn-outline-dark mb-3" href="#">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-center text-white py-5 mt-5 px-4">
+      <p class="mb-0">Copyright &copy; Your Website 2023</p>
+    </footer>
+  </body>
+</html>
