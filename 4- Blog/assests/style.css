@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header__logo {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover:not(.btn-outline-primary) {
+  text-decoration: underline;
+}
+
+nav {
+  height: 2rem;
+}
+
+.card__description {
+  font-size: 1.1rem;
+}
+
+.post {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card__post,
+  .card__img-right {
+    height: 17rem !important;
+  }
+}
