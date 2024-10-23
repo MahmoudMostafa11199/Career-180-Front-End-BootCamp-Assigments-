@@ -1,18 +1,17 @@
 {
-  "name": "Sshop Item",
-  "short_name": "shop-item",
-  
+  "name": "Blog",
+  "short_name": "blog",
+
   "icons": [
     {
       "src": "./assests/imgs/favicon-16x16.png",
       "type": "image/png",
-      "sizes": "16x16",
+      "sizes": "16x16"
     },
     {
       "src": "./assests/imgs/favicon-32x32.png",
       "type": "image/png",
-      "sizes": "32x32",
-    },
+      "sizes": "32x32"
+    }
   ]
 }
-1
