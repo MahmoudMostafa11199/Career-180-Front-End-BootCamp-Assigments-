@@ -1,0 +1,135 @@
+.header {
+  font-size: 16px !important;
+  background-color: $color-white;
+  color: $color-secondary-light;
+  padding-block: 1rem;
+  position: relative;
+
+  &__navbar {
+    @media only screen and (max-width: 75em) {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: inherit;
+    padding: 0.8rem 1.8rem !important;
+
+    &--active,
+    &:hover,
+    &:active {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+
+    &--toggle {
+      &::after {
+        font-family: 'bootstrap-icons';
+        content: '\F282';
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    background-color: $color-white;
+
+    &--deep {
+      top: 0;
+      right: 100%;
+    }
+  }
+
+  &__nav--toggle {
+    &:hover {
+      & > .header__menu {
+        display: block;
+
+        @include animation(moveToUp, 0.1s);
+
+        &--deep {
+          @include animation(moveToLeft, 0.1s);
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+    font-size: 3rem;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+
+    &--toggle {
+      @media only screen and (max-width: 75em) {
+        display: block;
+      }
+
+      &.hidden {
+        display: none !important;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////
+/////////////// Modal ////////////////
+//////////////////////////////////////
+.header__modal {
+  background-color: rgba($color-black, 0.6) !important;
+  width: 100% !important;
+  height: 100vh !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header {
+    &__nav {
+      width: 95%;
+      height: 90vh;
+      margin-top: 5rem !important;
+      padding: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      background-color: $color-white;
+      border-radius: 1rem;
+      flex-direction: column;
+      justify-content: start !important;
+      align-items: flex-start !important;
+
+      & .header__link {
+        background: none !important;
+
+        &--active,
+        &:hover,
+        &:active {
+          color: $color-primary;
+        }
+      }
+    }
+
+    &__menu {
+      &--deep {
+        left: 100%;
+      }
+    }
+
+    &__btn--close {
+      display: block !important;
+      color: $color-white;
+      font-weight: 700;
+      position: absolute;
+      top: 1rem;
+      right: 3rem;
+    }
+  }
+}

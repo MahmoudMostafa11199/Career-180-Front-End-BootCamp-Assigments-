@@ -1,0 +1,75 @@
+.footer {
+  background-color: $color-secondary-dark;
+  color: $color-white;
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 2rem 0;
+  }
+
+  & .social__link {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.6rem;
+    padding: 2rem;
+    border: 1px solid $color-grey-dark-3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      &,
+      & .icon {
+        color: $color-primary;
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  & .icon {
+    color: $color-grey-dark-3;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.4rem;
+      color: $color-grey-light-3;
+      margin-bottom: 0.8rem;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  &__address {
+    font-size: 1.4rem;
+  }
+
+  & .copyright {
+    font-size: 1.4rem;
+    padding: 2.4rem;
+    margin-top: 2rem;
+    background-color: $color-secondary-dark-2;
+
+    &__link {
+      color: $color-primary;
+
+      &:hover,
+      &:active {
+        color: $color-primary-dark;
+      }
+    }
+  }
+}

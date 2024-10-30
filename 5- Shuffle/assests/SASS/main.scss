@@ -1,0 +1,23 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
+
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/icon';
+@import 'components/logo';
+@import 'components/project-card';
+@import 'components/questions';
+@import 'components/slider';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';

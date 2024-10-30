@@ -1,0 +1,31 @@
+.icon {
+  color: $color-primary;
+  transition: color 0.3s;
+
+  &--small {
+    font-size: 2rem;
+    margin-right: 0.6rem;
+
+    &:hover {
+      color: $color-primary !important;
+    }
+  }
+
+  &--medium {
+    font-size: 2.6rem;
+    margin-right: 1rem;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &--large {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}

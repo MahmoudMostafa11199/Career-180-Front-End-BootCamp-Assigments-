@@ -1,0 +1,44 @@
+.accordion {
+  &-item {
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+
+  &-button {
+    color: $color-secondary-light;
+    font-weight: 700;
+    font-size: 1.8rem;
+    box-shadow: none !important;
+    padding: 0;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &:not(.collapsed) {
+      background-color: $color-white;
+      color: $color-primary;
+
+      &::after {
+        background: none;
+        transform: rotate(90deg);
+        color: $color-primary;
+      }
+    }
+
+    &::after {
+      font-family: 'bootstrap-icons';
+      content: '\F285';
+      width: 2rem !important;
+      height: 2rem !important;
+      background: none;
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  &-body {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    padding: 0;
+  }
+}

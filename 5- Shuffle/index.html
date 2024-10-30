@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--------------- FONT FAMILY ------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="./assests/script.js"></script>
+
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <title>Assigment - 5 | Shuffle</title>
+  </head>
+
+  <body class="position-relative">
+    <header class="header fixed-top shadow-sm">
+      <div
+        class="container-lg d-flex align-items-center justify-content-between"
+      >
+        <a class="navbar-brand logo" href="#">Shuffle</a>
+
+        <nav class="header__navbar">
+          <ul
+            class="header__nav d-flex align-items-center justify-content-between gap-1 m-0"
+          >
+            <li class="header__nav-item w-100">
+              <a class="header__link header__link--active" href="#home">Home</a>
+            </li>
+            <li class="header__nav-item w-100">
+              <a class="header__link" href="#about">About</a>
+            </li>
+            <li class="header__nav-item w-100">
+              <a class="header__link" href="#service">Services</a>
+            </li>
+            <li class="header__nav-item w-100">
+              <a class="header__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="header__nav-item w-100">
+              <a class="header__link" href="#team">Team</a>
+            </li>
+
+            <li
+              class="header__nav-item w-100 header__nav--toggle position-relative"
+            >
+              <a
+                class="header__link header__link--toggle d-flex align-items-center"
+                href="#"
+              >
+                Dropdown
+              </a>
+              <ul class="header__menu header__menu u-box-shadow">
+                <li class="header__nav-item w-100">
+                  <a class="header__link" href="#">Dropdown 1</a>
+                </li>
+                <li
+                  class="header__nav-item w-100 header__nav--toggle position-relative"
+                >
+                  <a
+                    class="header__link header__link--toggle d-flex align-items-center"
+                    href="#"
+                    >Deep Dropdown</a
+                  >
+                  <ul class="header__menu header__menu--deep u-box-shadow">
+                    <li class="header__nav-item w-100">
+                      <a class="header__link" href="#">Deep Dropdown 1</a>
+                    </li>
+                    <li class="header__nav-item w-100">
+                      <a class="header__link" href="#">Deep Dropdown 2</a>
+                    </li>
+                    <li class="header__nav-item w-100">
+                      <a class="header__link" href="#">Deep Dropdown 3</a>
+                    </li>
+                    <li class="header__nav-item w-100">
+                      <a class="header__link" href="#">Deep Dropdown 4</a>
+                    </li>
+                    <li class="header__nav-item w-100">
+                      <a class="header__link" href="#">Deep Dropdown 5</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item w-100">
+                  <a class="header__link" href="#">Dropdown 2</a>
+                </li>
+                <li class="header__nav-item w-100">
+                  <a class="header__link" href="#">Dropdown 3</a>
+                </li>
+                <li class="header__nav-item w-100">
+                  <a class="header__link" href="#">Dropdown 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item w-100">
+              <a class="header__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button class="header__btn header__btn--close">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </nav>
+        <button class="header__btn header__btn--toggle" type="button">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <div class="slider">
+          <div class="slider__item slider__item--1">
+            <div class="home__text-box">
+              <h1 class="heading__primary">Welcome to Shuffle</h1>
+              <p class="home__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <a href="#" class="btn btn--primary home__btn">Get Started</a>
+            </div>
+          </div>
+          <div class="slider__item slider__item--2">
+            <div class="home__text-box">
+              <h1 class="heading__primary">At vero eos et accusamus</h1>
+              <p class="home__text">
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat facere possimus,
+                omnis voluptas assumenda est, omnis dolor repellendus.
+                Temporibus autem quibusdam et aut officiis debitis aut.
+              </p>
+              <a href="#" class="btn btn--primary home__btn">Get Started</a>
+            </div>
+          </div>
+          <div class="slider__item slider__item--3">
+            <div class="home__text-box">
+              <h1 class="heading__primary">Temporibus autem quibusdam</h1>
+              <p class="home__text">
+                Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt omnis iste natus error sit voluptatem accusantium.
+              </p>
+              <a href="#" class="btn btn--primary home__btn">Get Started</a>
+            </div>
+          </div>
+
+          <button class="border-0 slider__btn slider__btn--left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="border-0 slider__btn slider__btn--right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="about" class="about u-padding-vertical-large">
+        <div class="container">
+          <div class="text-center u-margin-big">
+            <h2 class="heading__secondary">About</h2>
+            <p class="sub__heading">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+              <h3 class="heading__tertiary">
+                Voluptatem dignissimos provident quasi corporis
+              </h3>
+
+              <p class="about__text fst-italic mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="about__list">
+                <li class="about__list-item">
+                  <i class="bi bi-check-circle icon icon--small"></i>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li class="about__list-item">
+                  <i class="bi bi-check-circle icon icon--small"></i>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li class="about__list-item">
+                  <i class="bi bi-check-circle icon icon--small"></i>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+              </ul>
+              <a href="#" class="btn btn--primary rounded-3 py-3 btn__about"
+                ><span>Read More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0">
+              <img class="about__img" src="./assests/imgs/about.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats u-padding-vertical-large">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <div>
+              <div class="stats__item">
+                <i class="bi bi-emoji-smile icon icon--large"></i>
+                <div class="stats__text-box">
+                  <span class="stats__value">232</span>
+                  <p class="stats__text">
+                    <strong>Happy Clients</strong> consequuntur quae
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stats__item">
+                <i class="bi bi-journal-richtext icon icon--large"></i>
+                <div class="stats__text-box">
+                  <span class="stats__value">521</span>
+                  <p class="stats__text">
+                    <strong>Projects</strong> adipisci atque cum quia aut
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stats__item">
+                <i class="bi bi-headset icon icon--large"></i>
+                <div class="stats__text-box">
+                  <span class="stats__value">1453</span>
+                  <p class="stats__text">
+                    <strong>Hours Of Support</strong> aut commodi quaerat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stats__item">
+                <i class="bi bi-people icon icon--large"></i>
+                <div class="stats__text-box">
+                  <span class="stats__value">32</span>
+                  <p class="stats__text">
+                    <strong>Hard Workers</strong> rerum asperiores dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="services u-padding-vertical-large">
+        <div class="container">
+          <div class="text-center u-margin-big">
+            <h2 class="heading__secondary">Services</h2>
+            <p class="sub__heading">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+            <div class="p-3">
+              <div class="card u-box-shadow">
+                <i class="bi bi-activity icon icon--large"></i>
+                <h4 class="card__title my-3">Lorem Ipsum</h4>
+                <p class="card__text">
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="card u-box-shadow">
+                <i class="bi bi-bounding-box-circles icon icon--large"></i>
+                <h4 class="card__title my-3">Sed ut perspici</h4>
+                <p class="card__text">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="card u-box-shadow">
+                <i class="bi bi-calendar-week icon icon--large"></i>
+                <h4 class="card__title my-3">Magni Dolores</h4>
+                <p class="card__text">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="card u-box-shadow">
+                <i class="bi bi-broadcast icon icon--large"></i>
+                <h4 class="card__title my-3">Nemo Enim</h4>
+                <p class="card__text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta u-padding-vertical-large">
+        <div class="cta__bg-img"></div>
+        <div class="container">
+          <div class="text-center w-75">
+            <h2 class="heading__secondary heading__secondary--small">
+              Call To Action
+            </h2>
+            <p class="sub__heading">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            <a href="#" class="btn btn--white">Call To Action</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-services u-padding-vertical-large">
+        <div class="container">
+          <div class="text-center u-margin-big">
+            <h2 class="heading__secondary">More Services</h2>
+            <p class="sub__heading">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+
+          <div class="row ro-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="p-3">
+              <div class="m-services__card p-4 u-box-shadow h-100 rounded-3">
+                <img
+                  src="./assests/imgs/more-service-1.jpg"
+                  alt=""
+                  class="m-services__img w-100"
+                />
+                <div class="m-services__tex-box text-center p-4">
+                  <h3 class="heading__tertiary heading__tertiary--small">
+                    Ad cupiditate sed est odio
+                  </h3>
+                  <p class="m-services__text pb-2">
+                    Eum ad dolor et. Autem aut fugiat debitis voluptatem
+                    consequuntur sit. Et veritatis id.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="m-services__card p-4 u-box-shadow h-100 rounded-3">
+                <img
+                  src="./assests/imgs/more-service-2.jpg"
+                  alt=""
+                  class="m-services__img w-100"
+                />
+                <div class="m-services__tex-box text-center p-4">
+                  <h3 class="heading__tertiary heading__tertiary--small">
+                    Voluptatem voluptatum alias
+                  </h3>
+                  <p class="m-services__text pb-2">
+                    Repudiandae amet nihil natus in distinctio suscipit id.
+                    Doloremque ducimus ea sit non.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="m-services__card p-4 u-box-shadow h-100 rounded-3">
+                <img
+                  src="./assests/imgs/more-service-3.jpg"
+                  alt=""
+                  class="m-services__img w-100"
+                />
+                <div class="m-services__tex-box text-center p-4">
+                  <h3 class="heading__tertiary heading__tertiary--small">
+                    Fugit cupiditate alias nobis.
+                  </h3>
+                  <p class="m-services__text pb-2">
+                    Quam rem vitae est autem molestias explicabo debitis sint.
+                    Vero aliquid quidem commodi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio u-padding-vertical-large">
+        <div class="container">
+          <div class="text-center u-margin-big">
+            <h2 class="heading__secondary">Portfolio</h2>
+            <p class="sub__heading">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+
+          <div class="portfolio__nav">
+            <ul class="d-flex justify-content-center gap-4">
+              <li>
+                <a
+                  class="portfolio__nav-link portfolio__nav-link--active"
+                  href="#"
+                  >All</a
+                >
+              </li>
+              <li>
+                <a class="portfolio__nav-link" href="#">App</a>
+              </li>
+              <li>
+                <a class="portfolio__nav-link" href="#">Product</a>
+              </li>
+              <li>
+                <a class="portfolio__nav-link" href="#">Branding</a>
+              </li>
+              <li>
+                <a class="portfolio__nav-link" href="#">Books</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/app-1.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">App 1</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/product-1.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Product 1</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/branding-1.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Branding 1</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/books-1.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Book 1</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/app-2.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">App 2</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/product-2.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Product 2</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/branding-2.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Branding 2</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/books-2.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Book 2</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/app-3.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">App 3</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/books-3.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Book 3</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/branding-3.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Branding 3</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="p-3">
+              <figure class="project position-relative overflow-hidden">
+                <img
+                  class="w-100 project__img"
+                  src="./assests/imgs/books-3.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="project__description">
+                    <span class="project__type">Book 3</span>
+                    <div class="project__links">
+                      <a href="#" class="project__link project__link--zoom"
+                        ><i
+                          class="bi bi-zoom-in icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="project__link project__link--details"
+                        ><i
+                          class="bi bi-link-45deg icon icon--medium icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                    <p class="project__text text-center">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="team u-padding-vertical-large">
+        <div class="container">
+          <h2 class="heading__secondary text-center u-margin-big">Team</h2>
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+              <figure class="team__item position-relative">
+                <img
+                  class="w-100"
+                  src="./assests/imgs/team-1.jpg"
+                  alt="Walter White"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="team__description">
+                    <h4 class="team__name m-0">Walter White</h4>
+                    <p class="team__role fst-italic">Chief Executive Officer</p>
+                    <div class="team__links">
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-twitter-x icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-facebook icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-instagram icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-linkedin icon icon--small icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="col">
+              <figure class="team__item position-relative">
+                <img
+                  class="w-100"
+                  src="./assests/imgs/team-2.jpg"
+                  alt="Sarah Jhonson"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="team__description">
+                    <h4 class="team__name m-0">Sarah Jhonson</h4>
+                    <p class="team__role fst-italic">Product Manager</p>
+                    <div class="team__links">
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-twitter-x icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-facebook icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-instagram icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-linkedin icon icon--small icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="col">
+              <figure class="team__item position-relative">
+                <img
+                  class="w-100"
+                  src="./assests/imgs/team-3.jpg"
+                  alt="William Anderson"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="team__description">
+                    <h4 class="team__name m-0">William Anderson</h4>
+                    <p class="team__role fst-italic">CTO</p>
+                    <div class="team__links">
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-twitter-x icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-facebook icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-instagram icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-linkedin icon icon--small icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="col">
+              <figure class="team__item position-relative">
+                <img
+                  class="w-100"
+                  src="./assests/imgs/team-4.jpg"
+                  alt="Amanda Jepson"
+                />
+                <div
+                  class="overlay d-flex align-items-center justify-content-center"
+                >
+                  <div class="team__description">
+                    <h4 class="team__name m-0">Amanda Jepson</h4>
+                    <p class="team__role fst-italic">Accountant</p>
+                    <div class="team__links">
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-twitter-x icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-facebook icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-instagram icon icon--small icon--white"
+                        ></i
+                      ></a>
+                      <a href="#" class="team__link"
+                        ><i
+                          class="bi bi-linkedin icon icon--small icon--white"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq u-padding-vertical-large">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="px-lg-5 mb-5">
+                <h3 class="heading__tertiary">
+                  <span class="faq__title">Frequently Asked</span> Questions
+                </h3>
+                <p class="faq__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Duis aute irure dolor in reprehenderit
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item u-box-shadow">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      <span class="faq__number">1.</span> Non consectetur a erat
+                      nam at lectus urna duis?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                      id volutpat lacus laoreet non curabitur gravida. Venenatis
+                      lectus magna fringilla urna porttitor rhoncus dolor purus
+                      non.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item u-box-shadow">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      <span class="faq__number">2.</span>
+                      Feugiat scelerisque varius morbi enim nunc faucibus a
+                      pellentesque?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Dolor sit amet consectetur adipiscing elit pellentesque
+                      habitant morbi. Id interdum velit laoreet id donec
+                      ultrices. Fringilla phasellus faucibus scelerisque
+                      eleifend donec pretium. Est pellentesque elit ullamcorper
+                      dignissim. Mauris ultrices eros in cursus turpis massa
+                      tincidunt dui.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item u-box-shadow">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      <span class="faq__number">3.</span>
+                      Dolor sit amet consectetur adipiscing elit pellentesque?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                      sagittis orci. Faucibus pulvinar elementum integer enim.
+                      Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                      tellus pellentesque eu tincidunt. Lectus urna duis
+                      convallis convallis tellus. Urna molestie at elementum eu
+                      facilisis sed odio morbi quis
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item u-box-shadow">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      <span class="faq__number">4.</span>
+                      Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Dolor sit amet consectetur adipiscing elit pellentesque
+                      habitant morbi. Id interdum velit laoreet id donec
+                      ultrices. Fringilla phasellus faucibus scelerisque
+                      eleifend donec pretium. Est pellentesque elit ullamcorper
+                      dignissim. Mauris ultrices eros in cursus turpis massa
+                      tincidunt dui.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item u-box-shadow">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFive"
+                    >
+                      <span class="faq__number">5.</span>
+                      Tempus quam pellentesque nec nam aliquam sem et tortor
+                      consequat?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFive"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Molestie a iaculis at erat pellentesque adipiscing
+                      commodo. Dignissim suspendisse in est ante in. Nunc vel
+                      risus commodo viverra maecenas accumsan. Sit amet nisl
+                      suscipit adipiscing bibendum est. Purus gravida quis
+                      blandit turpis cursus in
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact u-padding-vertical-large">
+        <div class="container">
+          <div class="text-center u-margin-big">
+            <h2 class="heading__secondary">Contact</h2>
+            <p class="sub__heading">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col">
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="p-4">
+                  <div class="card">
+                    <i class="bi bi-geo-alt icon icon--large"></i>
+                    <h4 class="card__title my-3">Address</h4>
+                    <p class="card__text">
+                      A108 Adam Street
+                      <br />New York, NY 535022
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="card">
+                    <i class="bi bi-telephone icon icon--large"></i>
+                    <h4 class="card__title my-3">Call Us</h4>
+                    <p class="card__text">
+                      +1 5589 55488 55
+                      <br />
+                      +1 6678 254445 41
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="card">
+                    <i class="bi bi-envelope icon icon--large"></i>
+                    <h4 class="card__title my-3">Email Us</h4>
+                    <p class="card__text">
+                      info@example.com
+                      <br />
+                      contact@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <div class="card">
+                    <i class="bi bi-clock icon icon--large"></i>
+                    <h4 class="card__title my-3">Open Hours</h4>
+                    <p class="card__text">
+                      Monday &dash; Friday
+                      <br />
+                      9:00AM - 05:00PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col p-4">
+              <form class="contact__form p-4 h-100 row">
+                <div class="col-md-6 p-2 p-md-4">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    id="inputName"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 p-2 p-md-4">
+                  <input
+                    type="email"
+                    class="contact__input"
+                    id="inputEmail"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="col-12 px-2 py-4 p-md-4">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    id="inputSubject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="col-12 px-2 py-4 p-md-4">
+                  <textarea
+                    class="contact__input"
+                    id="inuputMessage"
+                    rows="6"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn--primary rounded-2 py-3">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer u-padding-vertical-large">
+      <div class="container">
+        <div class="row pb-5">
+          <div class="col-12 col-lg-5 mb-5 mb-lg-0 px-lg-5">
+            <a href="#" class="logo">Shuffle</a>
+            <p class="footer__text">
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div class="social d-flex gap-2">
+              <a href="#" class="social__link">
+                <i class="bi bi-twitter-x icon icon--small icon--white m-0"></i>
+              </a>
+              <a href="#" class="social__link">
+                <i class="bi bi-facebook icon icon--small icon--white m-0"></i>
+              </a>
+              <a href="#" class="social__link">
+                <i class="bi bi-instagram icon icon--small icon--white m-0"></i>
+              </a>
+              <a href="#" class="social__link">
+                <i class="bi bi-linkedin icon icon--small icon--white m-0"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 pt-3">
+            <h4 class="footer__heading">Useful Links</h4>
+            <ul>
+              <li><a href="#" class="footer__link">Home</a></li>
+              <li><a href="#" class="footer__link">About us</a></li>
+              <li><a href="#" class="footer__link">Services</a></li>
+              <li><a href="#" class="footer__link">Terms of service</a></li>
+              <li><a href="#" class="footer__link">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2 pt-3 mb-5 mb-md-0">
+            <h4 class="footer__heading">Our Services</h4>
+            <ul>
+              <li><a href="#" class="footer__link">Web Design</a></li>
+              <li><a href="#" class="footer__link">Web Development</a></li>
+              <li><a href="#" class="footer__link">Product Management</a></li>
+              <li><a href="#" class="footer__link">Marketing</a></li>
+              <li><a href="#" class="footer__link">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3 pt-3">
+            <h4 class="footer__heading">Contact Us</h4>
+            <address class="footer__address">
+              <p class="mb-4">
+                A108 Adam Street <br />
+                New York, NY 535022 <br />
+                United States <br />
+              </p>
+              <p class="mb-1"><strong>Phone:</strong> +1 5589 55488 55</p>
+              <p><strong>Email:</strong> info@example.com</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="copyright text-center">
+          <p class="mb-0">
+            &copy; Copyright <strong class="mx-2">Shuffle</strong> All Rights
+            Reserved
+          </p>
+          <span
+            >Designed by <a href="#" class="copyright__link">BootstrapMade</a> ,
+            built by
+            <a
+              href="https://github.com/MahmoudMostafa11199"
+              class="copyright__link"
+              >Mahmoud Mustafa</a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
