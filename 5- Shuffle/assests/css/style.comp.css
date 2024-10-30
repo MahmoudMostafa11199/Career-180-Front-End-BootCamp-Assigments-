@@ -253,6 +253,7 @@ section {
 
 .slider {
   height: 100vh;
+  overflow: hidden;
   position: relative; }
   .slider__btn {
     font-size: 3rem;
