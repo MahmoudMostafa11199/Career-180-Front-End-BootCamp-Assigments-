@@ -2,7 +2,7 @@
 @import url(../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css);
 @keyframes moveToUp {
   0% {
-    transform: translateY(50%);
+    transform: translateY(20%);
     opacity: 0; }
   100% {
     transform: translateY(0);
@@ -10,7 +10,7 @@
 
 @keyframes moveToDown {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(-20%);
     opacity: 0; }
   100% {
     transform: translateY(0);
@@ -18,7 +18,7 @@
 
 @keyframes moveToLeft {
   0% {
-    transform: translateX(50%);
+    transform: translateX(20%);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -283,8 +283,7 @@ section {
   font-size: 16px !important;
   background-color: #fff;
   color: #384f4b;
-  padding-block: 1rem;
-  position: relative; }
+  padding-block: 1rem; }
   @media only screen and (max-width: 75em) {
     .header__navbar {
       display: none; } }

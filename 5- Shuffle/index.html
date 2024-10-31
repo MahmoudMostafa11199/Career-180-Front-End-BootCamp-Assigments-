@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Shuffle, a modern web design and development company offering services in web design, development, product management, marketing, and graphic design. Get in touch with us today!"
+    />
 
     <!--------------- FONT FAMILY ------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,8 +16,15 @@
       rel="stylesheet"
     />
 
+    <!------------------------ ICON PAGE -------------------->
+    <link rel="icon" href="./assests/imgs/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assests/imgs/apple-touch-icon.png" />
+    <link rel="manifest" href="./assests/site.webmanifest" />
+
+    <!------------------------- JAVASCRIPT FILE -------------------->
     <script defer src="./assests/script.js"></script>
 
+    <!------------------------- CSS FILE -------------------->
     <link rel="stylesheet" href="./assests/css/style.css" />
     <title>Assigment - 5 | Shuffle</title>
   </head>
@@ -1178,13 +1189,14 @@
             </div>
 
             <div class="col p-4">
-              <form class="contact__form p-4 h-100 row">
+              <form class="contact__form p-4 h-100 row" name="contact" netlify>
                 <div class="col-md-6 p-2 p-md-4">
                   <input
                     type="text"
                     class="contact__input"
                     id="inputName"
                     placeholder="Your Name"
+                    name="name"
                     required
                   />
                 </div>
@@ -1194,6 +1206,7 @@
                     class="contact__input"
                     id="inputEmail"
                     placeholder="Your Email"
+                    name="email"
                     required
                   />
                 </div>
@@ -1203,6 +1216,7 @@
                     class="contact__input"
                     id="inputSubject"
                     placeholder="Subject"
+                    name="subject"
                     required
                   />
                 </div>
@@ -1212,6 +1226,7 @@
                     id="inuputMessage"
                     rows="6"
                     placeholder="Message"
+                    name="message"
                     required
                   ></textarea>
                 </div>
