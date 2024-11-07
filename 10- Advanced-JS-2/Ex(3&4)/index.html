@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      h1,
+      a {
+        text-align: center;
+      }
+      a {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      #target {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        opacity: 0.5;
+        margin: 12px 12px 26px;
+      }
+
+      button {
+        cursor: pointer;
+        padding: 12px;
+        font-size: 18px;
+      }
+
+      .buttons {
+        position: absolute;
+        right: 6px;
+      }
+
+      #timer {
+        font-size: 24px;
+        margin-right: 12px;
+        display: inline-block;
+      }
+    </style>
+
+    <script defer src="./script.js"></script>
+    <title>Assigment - 10 | Advanced JS-2 (3 & 4)</title>
+  </head>
+
+  <body>
+    <!--------------------- EXERCISE 3 --------------------->
+    <div class="exercise-3">
+      <h1>Exercise 3 (Animation JS)</h1>
+      <a href="./Ex-3.png" target="_blank">Source Code Ex-3</a>
+      <div class="container">
+        <div id="target"></div>
+        <div class="buttons">
+          <button class="grow">Grow</button>
+          <button class="shrink">Shrink</button>
+          <button class="fade-out">Fade Out</button>
+          <button class="fade-in">Fade In</button>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!--------------------- EXERCISE 4 --------------------->
+    <div class="exercise-4">
+      <h1>Exercise 4 (Timer)</h1>
+      <a href="./Ex-4.png" target="_blank">Source Code Ex-4</a>
+
+      <div id="timer">Timer : 0</div>
+      <button class="btn-timer">Start Timer</button>
+      <hr />
+    </div>
+  </body>
+</html>
