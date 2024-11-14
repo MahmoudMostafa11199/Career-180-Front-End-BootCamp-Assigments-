@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src=" https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Assigment - 12 | Advanced JS (ES6)-2 (dummyjson-API)</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="exercise-2">
+        <h1 class="p-4 text-center">(Display Products from API)</h1>
+      </div>
+
+      <!---------------------------- Search Products ---------------------------->
+      <div class="d-flex align-items-center mb-4">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          class="form-control flex-grow-1 me-5"
+          placeholder="Search products..."
+        />
+        <p class="m-0 w-25 fw-medium">
+          Found: <span id="result">0</span> result
+        </p>
+      </div>
+
+      <!---------------------------- Display Products ---------------------------->
+      <div class="products row row-cols-1 row-cols-md-3 row-cols-lg-4"></div>
+
+      <!---------------------------- Pagination ---------------------------->
+      <div
+        class="pagination d-flex justify-content-between align-items-center bg-light p-3 rounded-2"
+      >
+        <p class="mb-0 fw-medium">
+          Showing
+          <span id="page-from">1</span>
+          to the
+          <span id="page-to">40</span>
+          of
+          <span id="total">0</span>
+        </p>
+        <div>
+          <button class="btn btn-primary" id="btn-prev">Prev</button>
+          <button class="btn btn-primary" id="btn-next">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

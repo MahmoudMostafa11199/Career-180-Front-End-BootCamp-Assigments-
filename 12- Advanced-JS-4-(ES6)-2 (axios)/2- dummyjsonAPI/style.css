@@ -1,0 +1,9 @@
+.product__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card {
+  cursor: pointer;
+}
