@@ -26,4 +26,4 @@ Assignment-12 (Advanced-JS-4-(ES6)-2 (axios))
 https://posts-from-jsonplacholderapi-mahmoud.netlify.app/
 
 (dummyjson API)
-https://app.netlify.com/sites/products-from-dummyapi-mahmoud/
+https://products-from-dummyapi-mahmoud.netlify.app/
